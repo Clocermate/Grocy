@@ -320,6 +320,13 @@ section{
     line-height: 1.8rem;
 }
 .features .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr))
+    display: 
+    flex;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+    align-items: center;
+}
+.features .box-container img{
+    display: flex;
+    align-items: center;
 }
