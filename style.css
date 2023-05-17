@@ -115,11 +115,14 @@ text-align: center;
 
 .header .shopping-cart{
     position: absolute;
-    top: 110%;right: 2rem;
+    top: 110%;right: -110rem;
     padding: 1rem;
     box-shadow: var(--box-shadow);
     width: 35rem;
     background: #fff;
+}
+.header .shopping-cart.active{
+    right: 2rem;
 }
 .header .shopping-cart .box{
     display: flex;
@@ -130,6 +133,19 @@ text-align: center;
 }
 .header .shopping-cart .box img{
     height: 10rem;
+}
+.btn{
+    margin-top:1rem ;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--orange);
 }
 .header .shopping-cart .box .fa-trash{
     font-size: 2rem;
@@ -160,16 +176,8 @@ padding: 1rem 0;
 text-align: center;
 color: var(--black);
 }
-.btn{
-    margin-top:1rem ;
-    display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    border: .2rem solid var(--black);
-    color: var(--black);
-    cursor: pointer;
-}
-.btn:hover{
-    background: var(--orange);
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem ;
 }
