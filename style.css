@@ -325,3 +325,24 @@ section{
     gap:1.5rem;
     align-items: center;
 }
+.features .box-container .box{
+  padding: .3rem  2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+.features .box-container .box:hover{
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+.features .box-container .box img{
+  margin: 1rem 0;
+  height: auto;
+}
+.features .box-container .box h3{
+  font-size: 2.5rem;
+  line-height: 1.8rem;
+  color: var(--light-color);
+}
