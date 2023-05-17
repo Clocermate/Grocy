@@ -12,36 +12,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<header class="header">
-    <a href=""><i class="fas fa-shopping-basket"></i>Grocy</a>
+    <header class="header">
+      <a href="" class="logo"><i class="fas fa-shopping-basket"></i>Grocy</a>
 
-    <nav class="navbar">
+      <nav class="navbar">
         <a href="#home">home</a>
         <a href="#features">features</a>
         <a href="#products">products</a>
         <a href="#categories">categories</a>
         <a href="#review">review</a>
         <a href="#blogs">blogs</a>
-    </nav>
-</header>
-<section class="home" id="home"></section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="text" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+    <section class="home" id="home"></section>
 
     <script src="script.js"></script>
   </body>

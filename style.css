@@ -33,5 +33,69 @@ body{
 }
 .header{
     position: fixed;
-    
+    top:0;left:0;right:0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+font-size: 2.5rem;
+font-weight: bolder;
+color: var(--black);
+}
+.header .logo i{
+    color: var(--orange);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+    color:var(--orange);
+}
+.header .icons div{
+height: 4.5rem;
+width: 4.5rem;
+line-height: 4.5rem;
+border-radius: .5rem;
+background: #eee;
+color:var(--black);
+font-size: 2rem;
+cursor: pointer;
+margin-right: .3rem;
+text-align: center;
+}
+.header .icons div:hover{
+    background: var(--orange);
+    color: #fff;
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    width: 50rem;
+    background: #fff;
+    height: 4.5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
 }
