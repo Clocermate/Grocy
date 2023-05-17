@@ -1,183 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-
-:root{
-    --orange:#ff7800;
-    --black:#130f40;
-    --light-color:#666;
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-    --border:.2rem solid  rgba(0,0,0,.1);
-    --outline:.1rem solid rgba(0,0,0,.1);
-    --outline-hover:.2rem solid var(--black);
-}
-
-*{
-    font-family:'Poppins',sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-}
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
-}
-body{
-    background: #eee;
-}
-.header{
-    position: fixed;
-    top:0;left:0;right:0;
-    z-index:1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 9%;
-    background: #fff;
-    box-shadow: var(--box-shadow);
-}
-.header .logo{
-font-size: 2.5rem;
-font-weight: bolder;
-color: var(--black);
-}
-.header .logo i{
-    color: var(--orange);
-}
-.header .navbar a{
-    font-size: 1.7rem;
-    margin: 0 1rem;
-    color: var(--black);
-}
-.header .navbar a:hover{
-    color:var(--orange);
-}
-.header .icons div{
-height: 5rem;
-width: 4.5rem;
-line-height: 4.5rem;
-border-radius: .5rem;
-background: #eee;
-color:var(--black);
-font-size: 2rem;
-cursor: pointer;
-margin-right: .3rem;
-text-align: center;
-}
-.header .icons div:hover{
-    background: var(--orange);
-    color: #fff;
-}
-#menu-btn{
-    display: none;
-}
-.header .search-form{
-    position: absolute;
-    top: 110%;
-    right: -110%;
-    width: 50rem;
-    background: #fff;
-    height: 4rem;
-    border-radius: .5rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    box-shadow: var(--box-shadow);
-}
-.header .search-form.active{
-    right: 2rem;
-    transform:.4s linear ;
-}
-.header .search-form input{
-    height: 100%;
-    width: 100%;
-    background: none;
-    text-transform: none;
-    font-size: 1.6rem;
-    color: var(--black);
-    padding: 0 1.5rem;
-}
-.header .search-form label{
-    font-size: 2.2rem;
-    padding-right: 1.5rem;
-    color: var(--black);
-    cursor: pointer;
-}
-.header .search-form label:hover{
-    color: var(--orange);
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
 }
 
-.header .shopping-cart{
-    position: absolute;
-    top: 110%;right: -110rem;
-    padding: 1rem;
-    box-shadow: var(--box-shadow);
-    width: 35rem;
-    background: #fff;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-.header .shopping-cart.active{
-    right: 2rem;
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
-.header .shopping-cart .box{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
-    margin: 1rem 0;
+body {
+  background: #eee;
 }
-.header .shopping-cart .box img{
-    height: 10rem;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
 }
-.btn{
-    margin-top:1rem ;
-    display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    border: .2rem solid var(--black);
-    color: var(--black);
-    cursor: pointer;
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
 }
-.btn:hover{
-    background: var(--orange);
+.header .logo i {
+  color: var(--orange);
 }
-.header .shopping-cart .box .fa-trash{
-    font-size: 2rem;
-    top: 50%;right: 2rem;
-    position: absolute;
-    cursor: pointer;
-    color: var(--light-color);
-    transform: translateY(-50%);
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
 }
-.header .shopping-cart .box .fa-trash:hover{
-    color: var(--orange);
+.header .navbar a:hover {
+  color: var(--orange);
 }
-.header .shopping-cart .box .content h3{
-    color: var(--black);
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
+.header .icons div {
+  height: 5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  text-align: center;
 }
-.header .shopping-cart .box .content span{
-color: var(--light-color);
-font-size: 1.6rem;
+.header .icons div:hover {
+  background: var(--orange);
+  color: #fff;
 }
-.header .shopping-cart .box .content .quantity{
-    padding-left:1rem ;
+#menu-btn {
+  display: none;
+}
+.header .search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 50rem;
+  background: #fff;
+  height: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+.header .search-form.active {
+  right: 2rem;
+  transform: 0.4s linear;
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+.header .search-form label {
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.header .search-form label:hover {
+  color: var(--orange);
+}
+
+.header .shopping-cart {
+  position: absolute;
+  top: 110%;
+  right: -110rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  width: 35rem;
+  background: #fff;
+}
+.header .shopping-cart.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+.header .shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+.header .shopping-cart .box img {
+  height: 10rem;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+}
+.btn:hover {
+  background: var(--orange);
+}
+.header .shopping-cart .box .fa-trash {
+  font-size: 2rem;
+  top: 50%;
+  right: 2rem;
+  position: absolute;
+  cursor: pointer;
+  color: var(--light-color);
+  transform: translateY(-50%);
+}
+.header .shopping-cart .box .fa-trash:hover {
+  color: var(--orange);
+}
+.header .shopping-cart .box .content h3 {
+  color: var(--black);
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.header .shopping-cart .box .content span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+.header .shopping-cart .box .content .quantity {
+  padding-left: 1rem;
 }
 .header .shopping-cart .total {
-font-size: 2.5rem;
-padding: 1rem 0;
-text-align: center;
-color: var(--black);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--black);
 }
-.header .shopping-cart .btn{
-    display: block;
-    text-align: center;
-    margin: 1rem ;
+.header .shopping-cart .btn {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+}
+.header .login-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.header .login-form .box {
+    width: 100%;
+  margin: 0.7rem 0;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+.header .login-form p a{
+    color: var(--orange);
+    text-decoration: underline;
 }
