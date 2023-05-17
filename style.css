@@ -30,6 +30,9 @@ html {
 body {
   background: #eee;
 }
+section{
+    padding: 2rem 9%;
+}
 .header {
   position: fixed;
   top: 0;
@@ -137,6 +140,20 @@ body {
 .header .shopping-cart .box img {
   height: 10rem;
 }
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -226,14 +243,19 @@ body {
     text-decoration: underline;
 }
 @media(max-width:991px){
+   
     html {
         font-size: 55%;
       }
       .header{
         padding: 2rem;
       }
+      section{
+        padding: 2rem;
+    }
 }
 @media(max-width:768px){
+    
     #menu-btn{
         display: inline-block;
     }
@@ -258,9 +280,46 @@ body {
             display: block;
 
         }
+        section{
+            padding: 2rem;
+        }
 }
 @media(max-width:450px){
     html {
         font-size: 50%;
       }
+      .heading{
+        font-size: 2.5rem;
+      }
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/banner.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color:var(--orange)
+}
+.home .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr))
 }
