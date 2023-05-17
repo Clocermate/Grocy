@@ -59,7 +59,7 @@ color: var(--black);
     color:var(--orange);
 }
 .header .icons div{
-height: 4.5rem;
+height: 5rem;
 width: 4.5rem;
 line-height: 4.5rem;
 border-radius: .5rem;
@@ -80,10 +80,10 @@ text-align: center;
 .header .search-form{
     position: absolute;
     top: 110%;
-    right: 2rem;
+    right: -110%;
     width: 50rem;
     background: #fff;
-    height: 4.5rem;
+    height: 4rem;
     border-radius: .5rem;
     overflow: hidden;
     display: flex;
@@ -98,4 +98,13 @@ text-align: center;
     font-size: 1.6rem;
     color: var(--black);
     padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--orange);
 }
